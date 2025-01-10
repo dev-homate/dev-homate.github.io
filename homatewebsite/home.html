@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homate -request your own ride</title>
+    <link rel="stylesheet" href="./home.css">
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+</head>
+<body class="full">
+    <nav class="navbar">
+        <div class="nav-content">
+            <img src="../demo/Group 98 (1).png" alt="Logo" class="logo">
+            <button class="menu-toggle" onclick="toggleMenu()">
+                <span>☰</span>
+            </button>
+            <div class="nav-links">
+                <a href="#" class="nav-link">Home</a>
+                <a href="#" class="nav-link">About Us</a>
+                <a href="#pricing" class="nav-link">pricing</a>
+                <a href="#services" class="nav-link">Services</a>
+                <a href="#footer" class="nav-link">Contact Us</a>
+                <a href="#" class="download-btn" id="dbtn">Download App</a>
+                
+            </div>
+
+            <a href="#" class="download-btn" id="Mdbtn">Download App</a>
+
+
+        </div>
+    </nav>
+    <section class="hero-section">
+        <div>
+            <h1 data-aos="fade-right" data-aos-duration="1400">Go anywhere with Homate</h1>
+            <p data-aos="fade-right" data-aos-duration="1400" data-aos-delay="300" style="   font-weight: 400;
+        color: #4d4848;">Experience seamless travel with Homate—your trusted partner for reliable rides, convenient pick-ups</p>
+        </div>
+        <div class="hero-image" id="image1" data-aos="zoom-in" data-aos-duration="1400">
+            <img src="../demo/driver1.jpg" alt="Hero illustration">
+        </div>
+    </section>
+    <div class="part-2" id="aboutus" data-aos="zoom-in" data-aos-duration="1400">
+        <div class="part2">
+            <img src="../demo/driv 2.jpg" alt="Car rental illustration">
+        </div>
+        <div class="part3" data-aos="zoom-in" data-aos-duration="1400">
+            <h1>Your trusted partner for on-demand drivers.</h1>
+            <p  style="   font-weight: 400;
+            color: #4d4848;" >Connect with thousands of drivers and earn more per week with Homate.</p>
+            <a href="" class="get-started">Get started</a>
+        </div>
+    </div>
+    <div class="homate_business_wrapper">
+        <div partbuisness1>
+            <h1>From Your Doorstep to Destination in a Snap.</h1>
+            <p  style="   font-weight: 400;
+            color: #4d4848;">Why wait? Our drivers pick you up from your doorstep and take you to your destination seamlessly. Quick, convenient, and stress-free—every time.</p>
+            <!-- <div class="homate_business_buttons">
+                <a href="#" class="homate_business_cta">Get started</a>
+                 <a href="#" class="homate_business_secondary">Check out our solutions</a>
+            </div> -->
+        </div>
+        <div class="homate_business_image_container" data-aos="zoom-in" data-aos-duration="1400">
+            <img src="../demo/driv 3.jpg" alt="Business illustration" class="homate_business_image">
+        </div>
+    </div>
+    <div class="part4">
+        <h1>What's in it for you</h1>
+        <div class="part6" id="services">
+            <div class="part61" data-aos="zoom-in" data-aos-duration="1400">
+                <img src="../demo/div 4.jpg" alt="Bike Taxi">
+                <h2>Pick-up & drop</h2>
+                <p  style="   font-weight: 400;
+                color: #4d4848;">Whether it’s a quick errand or an important appointment, our pick-up and drop service has you covered. Just book,</p>
+            </div>
+
+            <div class="part61" data-aos="zoom-in" data-aos-duration="1400">
+                <img src="../demo/driv 5.jpg" alt="Auto">
+                <h2>Round trip</h2>
+                <p   style="   font-weight: 400;
+                color: #4d4848;">Plan your journey with ease! Book a round trip for hassle-free travel to your destination and back.</p>
+            </div>
+
+            <div class="part61" data-aos="zoom-in" data-aos-duration="1400">
+                <img src="../demo/driv 6.jpg" alt="Cabs">
+                <h2>Your trip mate</h2>
+                <p  style="   font-weight: 400;
+                color: #4d4848;">Travel together, travel smarter! With Trip Mate, share rides with friends or colleagues </p>
+            </div>
+        </div>
+    </div>
+    <div id="pricing" class="pricing_container">
+        <div>
+            <h2>Our Easy Pricing Plans for Everyone.</h2>
+            <p style="   font-weight: 400;
+            color: #4d4848;">At Homate, we offer flexible and transparent pricing that fits your needs. Whether you're planning a quick trip or a round trip, our competitive rates ensure you get the best value for your journey. No hidden fees, just clear and simple pricing designed to make your ride affordable and convenient.</p>
+        </div>
+        <div class="pricing_cards_wrapper" >
+            <div class="pricing_card featured">
+                <h3 class="pricing_card_title">Pick up and drop</h3>
+                <div class="pricing_card_price">₹250/hr</div>
+                <div class="pricing_card_period">Per Trip</div>
+                <ul class="pricing_card_features">
+                    <li class="pricing_card_feature">Door-to-Door Service</li>
+                    <li class="pricing_card_feature">250₹ Up to 1 hours</li>
+                    <li class="pricing_card_feature">100/hour after the first 2 hour</li>
+                    <li class="pricing_card_feature">Pay only for your Need</li>
+                </ul>
+                <a href="#" class="pricing_card_button">Get Started</a>
+            </div>
+            <div class="pricing_card" >
+                <h3 class="pricing_card_title">Round Trip</h3>
+                <div class="pricing_card_price">₹300/hr</div>
+                <div class="pricing_card_period">Per Trip</div>
+                <ul class="pricing_card_features">
+                    <li class="pricing_card_feature">pickup location to your destination and back</li>
+                    <li class="pricing_card_feature">300₹ Up to 2 hours</li>
+                    <li class="pricing_card_feature">100/hour after the first 4 hour</li>
+                    <li class="pricing_card_feature">Pay only for your Need</li>
+                </ul>
+                <a href="#" class="pricing_card_button">Get Started</a>
+            </div>
+        </div>
+    </div>
+    <div class="ref">
+        <div class="part7">
+            <div>
+                <h1>Request in seconds,<br>ride in minutes.</h1>
+                <p >Available for iOS and Android devices.</p>
+                <a href="#" class="cta-button">Get the app</a>
+            </div>
+            <div class="phone-mockup" data-aos="zoom-in" data-aos-duration="1000">
+                <img src="../demo/phonr-removebg-preview.png" alt="Mobile app screenshot">
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer_wrapper">
+        <div class="footer_container">
+            <div class="footer_cta">
+                <h2 class="footer_cta_title">Get Started With Us</h2>
+                <p class="footer_cta_text"></p>
+
+            </div>
+            
+            <div class="footer_content">
+                <div class="footer_links">
+                    <h3>Contact Us</h3>
+                    <div class="footer_address">
+                        <p>CITTIC TBI, CUSAT</p>
+                        <p>Ernakulam, Kerala</p>
+                        <div class="footer_store_buttons">
+                            <img src="../demo/apple.webp" alt="App Store" class="footer_store_button">
+                            <img src="../demo/play store.webp" alt="Play Store" class="footer_store_button">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer_links"id="footer">
+                    <h3>Help</h3>
+                    <a href="privacy_policy.html" target="_blank">Privacy Policy</a> 
+                    <a href="terms.html" target="_blank">Terms and Conditions</a>
+                    <!-- <a href="{% url 'terms' %}">Terms And Conditions</a> -->
+                    <!-- <a href="{% url 'privacy_policy' %}">Privacy Policys</a> -->
+                    <a href="#">Contact</a>
+                </div>
+
+                <div class="footer_links">
+                    <h3>Explore</h3>
+                    <a href="#">Blog</a>
+                    <a href="#">About Us</a>
+                    <a href="">Services</a>
+                </div>
+            </div>
+
+            <div class="footer_bottom">
+                <p>© 2025 homate</p>
+                <div class="footer-icons">
+                        <a href="https://example.com" target="_blank" title="Whatsapp">
+                            <img src="../demo/wtsap.png" alt="Clickable Image">
+                        </a>
+                        <a href="https://example.com" target="_blank" title="instagram">
+                            <img src="../demo/insta.png" alt="Clickable Image">
+                        </a>
+                        <a href="https://example.com" target="_blank" title="x">
+                            <img src="../demo/xx.png" alt="Clickable Image">
+                        </a>
+
+            </div>
+        </div>
+    </footer>
+    <script>
+        AOS.init({
+           offset:1,
+        });
+    </script>
+
+    
