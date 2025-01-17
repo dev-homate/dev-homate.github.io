@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Privacy Policy Template</title>
+    <title>Privacy Policy - Homate</title>
     <style>
         :root {
             --primary-color: #000000;
@@ -17,7 +17,6 @@
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            font-size: 25px;
         }
 
         body {
@@ -25,72 +24,120 @@
             line-height: 1.6;
             color: var(--text-color);
             background-color: var(--light-bg);
+            font-size: 16px;
         }
 
         .container {
+            width: 100%;
             max-width: 1200px;
             margin: 0 auto;
-            padding: 2rem;
+            padding: clamp(0.5rem, 3vw, 2rem);
         }
 
         header {
             background-color: var(--primary-color);
             color: white;
-            margin-bottom: 2rem;
+            margin-bottom: clamp(1rem, 4vw, 2rem);
             text-align: center;
+            padding: clamp(1.5rem, 4vw, 2rem);
         }
 
         h1 {
-            font-size: 2.5rem;
+            font-size: clamp(1.75rem, 5vw, 2.5rem);
+            margin-bottom: 0.5rem;
+        }
+
+        h2 {
+            font-size: clamp(1.25rem, 4vw, 1.75rem);
+            color: var(--secondary-color);
+            margin: 1.5rem 0 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid var(--accent-color);
+        }
+
+        h3 {
+            font-size: clamp(1.1rem, 3.5vw, 1.5rem);
+            margin: 1rem 0;
+        }
+
+        p, li {
+            font-size: clamp(0.9rem, 3vw, 1rem);
             margin-bottom: 1rem;
         }
 
         .terms-content {
             background-color: white;
-            padding: 2rem;
+            padding: clamp(1rem, 4vw, 2rem);
             border-radius: 8px;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        }
-
-        h2 {
-            color: var(--secondary-color);
-            margin: 2rem 0 1rem;
-            padding-bottom: 0.5rem;
-            border-bottom: 2px solid var(--accent-color);
-        }
-
-        p {
-            margin-bottom: 1rem;
-        }
-
-        ul, ol {
-            margin-left: 2rem;
-            margin-bottom: 1rem;
-        }
-
-        li {
-            margin-bottom: 0.5rem;
-        }
-
-        .contact-info {
-            background-color: var(--light-bg);
-            padding: 1rem;
-            border-radius: 4px;
-            margin: 1rem 0;
+            margin-bottom: 1.5rem;
         }
 
         .important-notice {
             background-color: #fff3cd;
             border-left: 4px solid #ffc107;
-            padding: 1rem;
+            padding: clamp(0.75rem, 3vw, 1rem);
+            margin: 1rem 0;
+        }
+
+        ul, ol {
+            margin-left: clamp(1rem, 4vw, 2rem);
+            margin-bottom: 1rem;
+        }
+
+        li {
+            margin-bottom: clamp(0.5rem, 2vw, 0.75rem);
+        }
+
+        .contact-info {
+            background-color: var(--light-bg);
+            padding: clamp(0.75rem, 3vw, 1rem);
+            border-radius: 4px;
             margin: 1rem 0;
         }
 
         footer {
             text-align: center;
-            padding: 2rem 0;
+            padding: clamp(1.5rem, 4vw, 2rem);
             color: var(--secondary-color);
-            margin-top: 2rem;
+            font-size: clamp(0.8rem, 2.5vw, 0.9rem);
+        }
+
+        @media (max-width: 768px) {
+            body {
+                font-size: 14px;
+            }
+
+            .container {
+                padding: 0.5rem;
+            }
+
+            .terms-content {
+                padding: 1rem;
+            }
+
+            ul, ol {
+                margin-left: 1.25rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            header {
+                padding: 1rem 0.5rem;
+            }
+
+            .important-notice {
+                padding: 0.75rem;
+                margin: 0.75rem 0;
+            }
+
+            .contact-info {
+                padding: 0.75rem;
+            }
+
+            ul, ol {
+                margin-left: 1rem;
+            }
         }
     </style>
 </head>
